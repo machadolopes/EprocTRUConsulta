@@ -1,0 +1,6 @@
+url="https://eproc.trf2.jus.br/eproc/"
+username = "g6274"
+password = "627235@Eproc"
+email_recipient = "marcelfelipe@mpf.mp.br"
+email_sender="marcel.felipe@gmail.com"
+email_password="wvmucoxbgvftqswe"
