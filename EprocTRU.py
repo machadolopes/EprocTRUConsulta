@@ -118,9 +118,10 @@ def consulta_novas_intimacoes_TRU():
         time.sleep(5)
         resultados =driver.find_elements(by=By.XPATH, value='//*[@id="tabelaProcessos"]/tbody/tr/td[2]/a')
         print("pesquisa com resultados...")
+       
         for item in resultados:
             novas_intimacoes_TRU = item.text.encode('utf-8').decode('utf-8')
-            msg = "Novas intimações em {1}".format(1,currentDate)+"\n"+novas_intimacoes_TRU+"\n"
+            msg = "Novas intimações em {1} nos processos {2}".format(currentDate,novas_intimacoes_TRU)
             print(item.text.encode('utf-8').decode('utf-8'))
             continue
     return msg
